@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fffaf6;
+  color: #000958;
+}
+body {
+  margin: 40px;
+  padding: 20px;
+}
+
+.main-left-icons {
+  margin-bottom: -10px;
+}
+.main-right-icons {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  justify-content: space-between;
+  transform: translate(1000%, -60%);
+}
+
+div.search {
+  margin-right: 20px;
+}
+
+div.person {
+  margin-left: 20px;
+}
+
+.nav-container {
+  display: flex;
+  position: absolute;
+  transform: translate(25%, -60%);
+  gap: 100px;
+}
+
+hr {
+  margin-top: 40px;
+  border: 1px solid;
+}
