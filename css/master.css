@@ -31,7 +31,7 @@ header {
   font-weight: bold;
 }
 hr {
-  border: 1px solid;
+  border: 1px solid #000958;
   margin-top: 20px;
 }
 main h2 {
@@ -70,4 +70,27 @@ main h2 {
 footer {
   margin-top: 100px;
   background-color: #f9e8ce;
+  padding: 10px;
+}
+
+.footer-content {
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 80px;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.copyright {
+  text-align: center;
+}
+
+.footer-logo {
+  margin-left: 60px;
 }
