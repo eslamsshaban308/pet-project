@@ -8,11 +8,15 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="../css/master.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
     <title>Pet Store</title>
   </head>
   <body>
     <header>
-      <a href="#" class="logo">
+      <button class="menu-toggle" type="button" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="index.html" class="logo">
         <i class="fa-solid fa-paw fa-2x"></i>
       </a>
 
@@ -154,5 +158,13 @@
 
       <p class="copyright">Copyright &copy; Uizard Pet Store 2021</p>
     </footer>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".nav-container");
+
+      menuToggle.addEventListener("click", function () {
+        nav.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

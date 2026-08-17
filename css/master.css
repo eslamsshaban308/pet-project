@@ -22,6 +22,14 @@ header {
   flex-shrink: 0;
 }
 
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
 .nav-container {
   display: flex;
   align-items: center;
@@ -119,20 +127,34 @@ li {
 
 @media (max-width: 768px) {
   header {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .logo {
+  .menu-toggle {
+    display: block;
     order: 1;
   }
 
+  .logo {
+    order: 2;
+    margin-left: auto;
+  }
+
   .nav-container {
+    display: none;
     order: 3;
     width: 100%;
-    margin-left: 0;
-    margin-top: 20px;
-    justify-content: space-between;
-    gap: 10px;
+    margin: 20px 0 0;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .nav-container.active {
+    display: flex;
   }
 
   .nav-container a {
@@ -140,7 +162,7 @@ li {
   }
 
   .main-right-icons {
-    order: 2;
+    display: none;
   }
 
   .footer-content {
