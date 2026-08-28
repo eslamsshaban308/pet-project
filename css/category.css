@@ -1,0 +1,30 @@
+.categories-title {
+  font-weight: 300;
+  margin-top: 100px;
+  margin-bottom: 80px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.categories-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  max-width: 860px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.category-card a {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  background-color: #fcf1e3;
+  border-radius: 30px;
+  align-items: center;
+}
+
+.category-card img {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}

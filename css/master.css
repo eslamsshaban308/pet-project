@@ -2,9 +2,11 @@
   box-sizing: border-box;
   color: #000958;
 }
-a {
-  text-decoration: none;
+
+html {
+  scroll-behavior: smooth;
 }
+
 body {
   max-width: 1200px;
   margin: 20px auto;
@@ -12,6 +14,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #fffaf6;
 }
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 header {
   display: flex;
   align-items: center;
@@ -28,6 +41,7 @@ header {
   border: none;
   cursor: pointer;
   font-size: 24px;
+  padding: 0;
 }
 
 .nav-container {
@@ -49,37 +63,9 @@ header {
 }
 
 hr {
-  border: 1px solid #000958;
+  border: 0;
+  border-top: 1px solid #000958;
   margin-top: 20px;
-}
-.categories-title {
-  font-weight: 300;
-  margin-top: 100px;
-  margin-bottom: 80px;
-  text-align: center;
-  font-size: 40px;
-}
-.categories-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  max-width: 860px;
-  margin: 0 auto;
-  gap: 20px;
-}
-
-.category-card a {
-  display: flex;
-  flex-direction: column;
-  font-weight: bold;
-  background-color: #fcf1e3;
-  border-radius: 30px;
-  align-items: center;
-}
-
-.category-card img {
-  width: 130px;
-  height: 130px;
-  object-fit: contain;
 }
 
 footer {
@@ -90,10 +76,19 @@ footer {
 
 .footer-content {
   min-height: 200px;
+
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+
   gap: clamp(20px, 4vw, 40px);
+
   align-items: center;
+}
+
+/* Footer Logo */
+
+.footer-logo {
+  margin: 0 auto;
 }
 
 .footer-column ul {
@@ -101,8 +96,7 @@ footer {
   margin: 0;
 }
 
-li {
-  list-style-type: none;
+.footer-column li {
   font-size: 12px;
   line-height: 25px;
 }
@@ -111,23 +105,23 @@ li {
   margin-bottom: 10px;
 }
 
-.copyright {
-  text-align: center;
-  font-size: 12px;
-}
-
 .social-icons {
   display: flex;
   gap: 10px;
 }
 
-.footer-logo {
-  margin: 0 auto;
+.copyright {
+  text-align: center;
+  font-size: 12px;
 }
 
 @media (max-width: 768px) {
+  body {
+    margin: 0 auto;
+    padding: 15px;
+  }
+
   header {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
@@ -145,11 +139,17 @@ li {
 
   .nav-container {
     display: none;
+
     order: 3;
+
     width: 100%;
+
     margin: 20px 0 0;
+
     flex-direction: column;
+
     align-items: flex-start;
+
     gap: 20px;
   }
 
@@ -173,5 +173,9 @@ li {
 @media (max-width: 450px) {
   .footer-content {
     grid-template-columns: 1fr;
+  }
+
+  .footer-logo {
+    margin: 0;
   }
 }

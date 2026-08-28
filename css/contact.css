@@ -1,8 +1,10 @@
 .contact-container {
   max-width: 800px;
   margin: 0 auto;
+
   display: flex;
   gap: 20px;
+
   padding-top: 60px;
 }
 
@@ -19,10 +21,14 @@
 
 .contact {
   background-color: white;
-  box-shadow: 0px 5px 29px 0px rgba(128, 128, 128, 0.292);
+  box-shadow: 0 5px 29px rgba(128, 128, 128, 0.292);
   border-radius: 25px;
   width: 100%;
   padding: 20px;
+}
+
+.contact h2 {
+  margin-left: 20px;
 }
 
 .contact .data {
@@ -32,25 +38,29 @@
   padding-top: 20px;
   margin: 20px;
 }
-.contact h2 {
-  margin-left: 20px;
-}
+
 .contact ul {
   margin: 0;
   padding: 0;
 }
+
 .contact .data ul li:first-child {
   margin-bottom: 8px;
 }
+
 .contact .data li {
   line-height: 22px;
 }
 
 .message {
   color: white;
+
   background-color: #090968;
-  box-shadow: 0px 5px 29px 0px rgba(128, 128, 128, 0.292);
+
+  box-shadow: 0 5px 29px rgba(128, 128, 128, 0.292);
+
   border-radius: 15px;
+
   padding: 35px;
 }
 
@@ -59,43 +69,56 @@
   margin: 0;
 }
 
-.name-row {
-  display: flex;
-  gap: 20px;
-  margin-top: 50px;
-}
-.name-row div {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  flex: 1;
-}
-
 .message form label {
   color: white;
   font-weight: 100;
 }
 
+.name-row {
+  display: flex;
+  gap: 20px;
+
+  margin-top: 50px;
+}
+
+.name-row div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+
+  flex: 1;
+}
+
 .message form input {
   background-color: transparent;
+
   color: white;
+
   line-height: 20px;
+
   padding-bottom: 5px;
+
   border: none;
+
   width: 100%;
-  border-bottom: 1px rgba(255, 255, 255, 0.458) solid;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.458);
 }
 
 .message form input:focus {
   outline: none;
-  border-bottom: 1px white solid;
+
+  border-bottom: 1px solid white;
 }
 
 .message .email-field {
   display: flex;
   flex-direction: column;
+
   margin-top: 20px;
   margin-bottom: 20px;
+
   gap: 5px;
 }
 
@@ -106,54 +129,79 @@
 
 .message .message-field textarea {
   min-height: 120px;
+
   background-color: transparent;
+
   color: white;
-  border: 1px rgba(255, 255, 255, 0.458) solid;
+
+  border: 1px solid rgba(255, 255, 255, 0.458);
+
   border-radius: 10px;
-  margin: 10px 0px;
-  margin-bottom: 25px;
+
+  margin: 10px 0 25px;
+
   padding: 10px;
+
   outline: none;
+
   width: 100%;
 }
 
 .message form button {
   display: block;
+
   margin: auto;
+
   background-color: #f55c30;
+
   width: 100%;
+
   color: white;
-  border: transparent;
+
+  border: none;
+
   padding: 15px;
+
   border-radius: 30px;
+
+  cursor: pointer;
 }
 
 .map {
   width: 100%;
   height: 200px;
+
   background-color: #ddd;
+
   border-radius: 15px;
 }
 
 .map iframe {
   width: 100%;
   height: 100%;
+
   border-radius: 15px;
 }
 
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
+
     padding-inline: 15px;
   }
+
   .name-row {
     flex-direction: column;
+
     gap: 20px;
   }
+
   .contact .data {
     grid-template-columns: 1fr;
+
     margin: 10px;
   }
+
   .message {
     padding: 25px;
   }
