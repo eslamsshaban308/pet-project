@@ -68,6 +68,8 @@ hr {
   margin-top: 20px;
 }
 
+/* //////////////////// */
+
 footer {
   margin-top: 100px;
   background-color: #f9e8ce;
@@ -84,8 +86,6 @@ footer {
 
   align-items: center;
 }
-
-/* Footer Logo */
 
 .footer-logo {
   margin: 0 auto;
@@ -130,6 +130,7 @@ footer {
   .menu-toggle {
     display: block;
     order: 1;
+    margin-inline-end: auto;
   }
 
   .logo {
@@ -139,17 +140,11 @@ footer {
 
   .nav-container {
     display: none;
-
     order: 3;
-
     width: 100%;
-
     margin: 20px 0 0;
-
     flex-direction: column;
-
     align-items: flex-start;
-
     gap: 20px;
   }
 

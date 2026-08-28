@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +7,8 @@
       src="https://kit.fontawesome.com/dc66bde90f.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../css/category.css" />
     <link rel="stylesheet" href="../css/master.css" />
+    <link rel="stylesheet" href="../css/category.css" />
     <title>Pet Store</title>
   </head>
   <body>
@@ -143,11 +143,15 @@
           <h4>Social</h4>
 
           <div class="social-icons">
-            <a href="#" aria-label="Instagram">
+            <a
+              href="https://www.instagram.com/"
+              aria-label="Instagram"
+              target="_blank"
+            >
               <i class="fa-brands fa-instagram fa-2x"></i>
             </a>
 
-            <a href="#" aria-label="Twitter">
+            <a href="https://x.com/" aria-label="Twitter" target="_blank">
               <i class="fa-brands fa-twitter fa-2x"></i>
             </a>
           </div>
@@ -161,7 +165,6 @@
     <script>
       const menuToggle = document.querySelector(".menu-toggle");
       const nav = document.querySelector(".nav-container");
-
       menuToggle.addEventListener("click", function () {
         nav.classList.toggle("active");
       });
